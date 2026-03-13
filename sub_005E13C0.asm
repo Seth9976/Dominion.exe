@@ -1,0 +1,95 @@
+// FUNCTION START: 005E13C0 ~ 005E155C  [idx: 39B]
+// ============================================================
+005E13C0    cmp ecx, 0xE2F
+005E13C6    jnle 0x005E14C1
+005E13CC    jz 0x005E1550
+005E13D2    cmp ecx, 0xB18
+005E13D8    jnle 0x005E1461
+005E13DE    jz 0x005E1550
+005E13E4    cmp ecx, 0x610
+005E13EA    jnle 0x005E1428
+005E13EC    jz 0x005E1550
+005E13F2    cmp ecx, 0x41E
+005E13F8    jnle 0x005E1414
+005E13FA    jz 0x005E1550
+005E1400    sub ecx, 0x401
+005E1406    jz 0x005E1550
+005E140C    sub ecx, 0x1B
+005E140F    jmp 0x005E154E
+005E1414    sub ecx, 0x604
+005E141A    jz 0x005E1550
+005E1420    sub ecx, 0x04
+005E1423    jmp 0x005E154E
+005E1428    cmp ecx, 0x80D
+005E142E    jnle 0x005E144D
+005E1430    jz 0x005E1550
+005E1436    cmp ecx, 0x61E
+005E143C    jz 0x005E1550
+005E1442    cmp ecx, 0x71F
+005E1448    jmp 0x005E154E
+005E144D    sub ecx, 0xB08
+005E1453    jz 0x005E1550
+005E1459    sub ecx, 0x02
+005E145C    jmp 0x005E154E
+005E1461    cmp ecx, 0xD0D
+005E1467    jnle 0x005E14A5
+005E1469    jz 0x005E1550
+005E146F    cmp ecx, 0xC15
+005E1475    jnle 0x005E1491
+005E1477    jz 0x005E1550
+005E147D    sub ecx, 0xB21
+005E1483    jz 0x005E1550
+005E1489    sub ecx, 0x02
+005E148C    jmp 0x005E154E
+005E1491    sub ecx, 0xD05
+005E1497    jz 0x005E1550
+005E149D    sub ecx, 0x01
+005E14A0    jmp 0x005E154E
+005E14A5    add ecx, 0xFFFFF2EA
+005E14AB    cmp ecx, 0xF7
+005E14B1    jnbe 0x005E14E6
+005E14B3    movzx eax, byte ptr ds:[ecx+0x5E1568]
+005E14BA    jmp dword ptr ds:[eax*4+0x5E1560]
+005E14C1    cmp ecx, 0x103A
+005E14C7    jnle 0x005E1505
+005E14C9    jz 0x005E1550
+005E14CF    cmp ecx, 0xF13
+005E14D5    jnle 0x005E14E9
+005E14D7    jz 0x005E1550
+005E14D9    cmp ecx, 0xF01
+005E14DF    jnz 0x005E14E6
+005E14E1    cmp edx, 0x16
+005E14E4    jnz 0x005E1550
+005E14E6    xor al, al
+005E14E8    ret
+005E14E9    add ecx, 0xFFFFF0EB
+005E14EF    cmp ecx, 0xF9
+005E14F5    jnbe 0x005E14E6
+005E14F7    movzx eax, byte ptr ds:[ecx+0x5E166C]
+005E14FE    jmp dword ptr ds:[eax*4+0x5E1660]
+005E1505    cmp ecx, 0x1235
+005E150B    jnle 0x005E1539
+005E150D    jz 0x005E1550
+005E150F    cmp ecx, 0x1121
+005E1515    jnle 0x005E1529
+005E1517    jz 0x005E1550
+005E1519    cmp ecx, 0x104C
+005E151F    jz 0x005E1550
+005E1521    cmp ecx, 0x111D
+005E1527    jmp 0x005E154E
+005E1529    cmp ecx, 0x112E
+005E152F    jz 0x005E1550
+005E1531    cmp ecx, 0x1225
+005E1537    jmp 0x005E154E
+005E1539    cmp ecx, 0x130C
+005E153F    jnle 0x005E1553
+005E1541    jz 0x005E1550
+005E1543    sub ecx, 0x1302
+005E1549    jz 0x005E1550
+005E154B    sub ecx, 0x09
+005E154E    jnz 0x005E14E6
+005E1550    mov al, 0x01
+005E1552    ret
+005E1553    cmp ecx, 0x1510
+005E1559    setz al
+// FUNCTION END
